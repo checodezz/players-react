@@ -1,13 +1,15 @@
+import { NavLink } from "react-router-dom";
+
 const Header = () => {
   return (
     <header>
-      <nav class="navbar navbar-expand-lg bg-body-tertiary">
-        <div class="container">
-          <a class="navbar-brand" href="#">
-            Navbar
-          </a>
+      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <div className="container">
+          <NavLink to="/" className="navbar-brand">
+            Company Logo
+          </NavLink>
           <button
-            class="navbar-toggler"
+            className="navbar-toggler"
             type="button"
             data-bs-toggle="collapse"
             data-bs-target="#navbarNav"
@@ -15,24 +17,24 @@ const Header = () => {
             aria-expanded="false"
             aria-label="Toggle navigation"
           >
-            <span class="navbar-toggler-icon"></span>
+            <span className="navbar-toggler-icon"></span>
           </button>
-          <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">
+          <div className="collapse navbar-collapse" id="navbarNav">
+            <ul className="navbar-nav">
+              <li className="nav-item">
+                <NavLink to="/" className="nav-link active" aria-current="page">
                   Home
-                </a>
+                </NavLink>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Features
-                </a>
+              <li className="nav-item">
+                <NavLink to="/players" className="nav-link">
+                  Players
+                </NavLink>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#">
-                  Pricing
-                </a>
+              <li className="nav-item">
+                <NavLink to="/report" className="nav-link">
+                  Report
+                </NavLink>
               </li>
             </ul>
           </div>
