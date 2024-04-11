@@ -19,7 +19,7 @@ export default function App() {
             Meet our talented team of players who work hard to achieve success
             on field.
           </p>
-          <a className="btn btn-primary">View Players</a>
+          <Link to="/players" className="btn btn-primary">View Players</Link>
         </div>
         <div className="my-5">
           <h2 className="">Team Performance</h2>
@@ -27,7 +27,7 @@ export default function App() {
             Explore our team's performance statistics to gain insights into our
             success on the field.
           </p>
-          <a className="btn btn-primary">View Performance</a>
+          <Link to="/report" className="btn btn-primary">View Performance</Link>
         </div>
       </main>
       <Footer />

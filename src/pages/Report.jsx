@@ -6,7 +6,7 @@ const Report = () => {
     <>
       <Header />
       <main className="container my-4">
-        <h2>HR Report</h2>
+        <h2>Team Performance Report</h2>
         <hr />
         <div className="row ">
           <div className="col-md-4">
