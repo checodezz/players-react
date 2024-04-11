@@ -41,6 +41,8 @@ const Players = () => {
           ))}
         </ul>
       </main>
+      <br/>
+      <br/>
       <Footer />
     </>
   );
