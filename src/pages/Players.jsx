@@ -34,7 +34,7 @@ const Players = () => {
             <li key={player.id} className="list-group-item">
               <h5>{player.name}</h5>
               <p>{player.position}</p>
-              <Link to="" className="btn btn-primary">
+              <Link to={`/players/${player.id}`} className="btn btn-primary">
                 View Details
               </Link>
             </li>
